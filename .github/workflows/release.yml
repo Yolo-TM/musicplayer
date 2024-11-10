@@ -52,7 +52,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: exe
-          path: .\build\windows\x64\runner\Release\musicplayer.exe
+          path: .\build\windows\x64\runner\Release\
 
   release:
     name: Release
@@ -78,6 +78,7 @@ jobs:
       - run: mkdir -v upload
       - run: mv apk/app-release.apk upload/app.apk
       - run: mv exe/musicplayer.exe upload/musicplayer.exe
+      - run: mv exe/flutter_windows.dll upload/flutter_windows.dll
       - name: Upload Programm to release
         uses: svenstaro/upload-release-action@v2
         with:
