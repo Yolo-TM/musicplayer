@@ -25,7 +25,6 @@ https://pub.dev/packages/audio_session
 https://pub.dev/packages/just_waveform
 https://pub.dev/packages/just_audio_background
 
-https://pub.dev/packages/drift
-https://pub.dev/packages/drift_db_viewer
-https://pub.dev/packages/drift_local_storage_inspector
-https://drift.simonbinder.eu/docs/getting-started/
+https://pub.dev/packages/sqlite_async
+https://pub.dev/packages/shared_preferences
+

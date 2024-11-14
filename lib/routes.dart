@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'cookies.dart';
-import 'backend.dart';
+import 'db_wrapper.dart';
 
 enum ROUTES { HOME, PLAYER, SETTINGS, DB }
 
@@ -13,7 +12,7 @@ class _LoadingPanelState extends State<LoadingPanel> {
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(
-      future: Database().initialize(),
+      future: Initialize(),
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.waiting) {
           return Scaffold(

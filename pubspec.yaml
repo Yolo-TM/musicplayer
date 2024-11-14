@@ -21,8 +21,8 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.8
-  shared_preferences: 2.3.2
-  drift: 2.21.0
+  sqlite_async: ^0.11.0
+  just_audio: ^0.9.42
 
 dev_dependencies:
   flutter_test:
